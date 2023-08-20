@@ -139,6 +139,13 @@ $videos = [
   ['title' => '', 'url' => 'https://www.youtube-nocookie.com/embed/qji-m2F3kv0?si=_n8hsg053alvNgJc&amp;start=10']
 ];
 
+// shuffle credits so there's no arguments about who's name is first
+$artists = [
+  ['name' => 'sean walker', 'role' => 'vocals & guitar'],
+  ['name' => 'lloyd culpepper', 'role' => 'bass'],
+  ['name' => 'george carey', 'role' => 'drums']
+];
+shuffle($artists);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -201,21 +208,36 @@ $videos = [
   </header>
   <main class="displayable">
     <div class="flex-row about-section">
-      <section class="bio flex-col">
-        <h2 class="placeholder">bio</h2>
-        <p class="placeholder">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Exercitationem iste sed in libero asperiores iure deserunt beatae
-          quis corrupti sunt! Corrupti laborum, delectus optio enim ex minima
-          doloribus quas. Tempore!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-          velit, cum amet facilis deleniti tempore doloremque eaque illum
-          distinctio laboriosam, ea recusandae, ab error. Doloremque provident
-          quasi deserunt ipsum maiores.
-        </p>
-      </section>
+      <div class="flex-col">
+        <section class="bio flex-col">
+          <h2 class="placeholder">bio</h2>
+          <p class="placeholder">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem iste sed in libero asperiores iure deserunt beatae
+            quis corrupti sunt! Corrupti laborum, delectus optio enim ex minima
+            doloribus quas. Tempore!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+            velit, cum amet facilis deleniti tempore doloremque eaque illum
+            distinctio laboriosam, ea recusandae, ab error. Doloremque provident
+            quasi deserunt ipsum maiores.
+          </p>
+        </section>
+        <section class="videos flex-col">
+          <h2 class="title">videos</h2>
+          <div class="flex-row scroller">
+            <div class="scrollable flex-col">
+              <iframe width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/qji-m2F3kv0?si=_n8hsg053alvNgJc&amp;start=10"
+                title="birdribs @ vinestock 2023" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <p>live @ vinestock 2023</p>
+            </div>
+          </div>
+        </section>
+      </div>
       <section class="music flex-col">
         <h2 class="title">music</h2>
         <div class="embed flex-col">
@@ -227,33 +249,22 @@ $videos = [
       </section>
     </div>
     <div class="flex-row about-section">
-      <section class="videos flex-col">
-        <h2 class="title">videos</h2>
-        <div class="flex-row scroller">
-          <div class="scrollable flex-col">
-            <iframe width="560" height="315"
-              src="https://www.youtube-nocookie.com/embed/qji-m2F3kv0?si=_n8hsg053alvNgJc&amp;start=10"
-              title="birdribs @ vinestock 2023" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-            <p>live @ vinestock 2023</p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="flex-row about-section">
       <section class="credits flex-col">
         <h2 class="title">credits</h2>
         <div class="flex-row">
           <div class="credits-details flex-col">
-            <span class="role">vocals & guitar</span>
-            <span class="role">bass</span>
-            <span class="role">drums</span>
+            <?php foreach ($artists as $artist): ?>
+              <span class="role">
+                <?php echo ($artist['role']) ?>
+              </span>
+            <?php endforeach; ?>
           </div>
           <div class="credits-details flex-col">
-            <span class="person">sean walker</span>
-            <span class="person">lloyd culpepper</span>
-            <span class="person">george carey</span>
+            <?php foreach ($artists as $artist): ?>
+              <span class="person">
+                <?php echo ($artist['name']) ?>
+              </span>
+            <?php endforeach; ?>
           </div>
         </div>
         <div class="special-thanks flex-col">

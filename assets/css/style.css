@@ -106,7 +106,7 @@ main {
   justify-content: center;
 }
 .about-section:first-child section {
-  width: 35%;
+  width: 35vw;
 }
 .about-section section {
   margin: 0 40px;
@@ -133,12 +133,12 @@ main {
 }
 .about-section section.videos {
   margin-top: 40px;
-  width: calc(70vw + 80px);
+  width: 35vw;
 }
 
 .scroller {
   overflow-x: scroll;
-  margin: 20px;
+  margin: 20px 0;
 }
 .scroller .scrollable {
   margin: 0 16px;
