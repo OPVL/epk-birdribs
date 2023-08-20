@@ -78,6 +78,7 @@ header.flex-col
     text-transform: uppercase
     transition-property: background, color
     transition-duration: 0.2s
+    font-weight: 600
     &:hover
         background: $color-white
         color: $color-black
@@ -113,7 +114,7 @@ main
 
         &.videos
             margin-top: 40px
-            width: 70%
+            width: calc( 70vw + 80px )
 .scroller
     overflow-x: scroll
     // width: 100%
@@ -129,6 +130,7 @@ main
             color: white
             text-decoration: none
             text-transform: uppercase
+            font-weight: 600
 
 /* width */
 ::-webkit-scrollbar
@@ -149,6 +151,7 @@ main
 footer
     background: $color-black
     color: $color-white
+    margin-top: 40px
     .copyright
         padding: 1rem
         text-align: center
@@ -175,3 +178,34 @@ footer
             transition: color,background 0.2s ease-in-out
             &:hover
                 color: $color-danger
+.credits-details.flex-col
+    width: 200px
+    justify-content: space-between
+section.credits.flex-col
+    width: 35vw
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-weight: 600
+
+section.contact.flex-col
+    justify-content: space-between
+    width: 35vw
+
+.credits-details.flex-col:last-child
+    text-align: right
+
+.special-thanks.flex-col
+    /* justify-content: center; */
+    align-items: center
+    margin-top: 20px
+    /* justify-content: space-evenly; */
+    font-size: 12px
+    color: gray
+    /* width: 100%; */
+
+.special-thanks h4.subheading
+    text-align: center
+    width: auto
+    margin-bottom: 12px
+
+.special-thanks.flex-col

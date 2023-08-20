@@ -236,7 +236,36 @@ $videos = [
         </div>
       </section>
     </div>
-    <div class="flex-col about-section">
+    <div class="flex-row about-section">
+      <section class="credits flex-col">
+        <h2 class="title">credits</h2>
+        <div class="flex-row">
+          <div class="credits-details flex-col">
+            <span class="role">vocals & guitar</span>
+            <span class="role">bass</span>
+            <span class="role">drums</span>
+          </div>
+          <div class="credits-details flex-col">
+            <span class="person">sean walker</span>
+            <span class="person">lloyd culpepper</span>
+            <span class="person">george carey</span>
+          </div>
+        </div>
+        <div class="special-thanks flex-col">
+          <h4 class="subheading">special thanks</h4>
+          <div class="flex-row">
+            <div class="credits-details flex-col">
+              <span class="role">production</span>
+              <span class="role">photography</span>
+              <span class="role">mastering</span>
+            </div>
+            <div class="credits-details flex-col">
+              <span class="person">future primate</span>
+              <span class="person">steven tatlow</span>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="contact flex-col">
         <h2 class="title">all enquiries</h2>
         <div class="flex-row">
@@ -250,6 +279,7 @@ $videos = [
             </p>
           </div>
         </div>
+      </section>
     </div>
   </main>
   <footer>
