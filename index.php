@@ -168,7 +168,9 @@ $videos = [
 
 <body>
   <div class="no-small-displays">
-    <h1>this is best viewed on a larger screen</h1>
+    <div class="message">
+      <h1>this is best viewed on a larger screen</h1>
+    </div>
   </div>
   <header class="flex-col displayable">
     <div class="logo">

@@ -251,8 +251,43 @@ section.contact.flex-col {
 
 .no-small-displays {
   display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.no-small-displays .message {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  background: #990040;
+  width: 300px;
+  justify-content: c;
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+.no-small-displays .message i {
+  font-size: 12vw;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-section section {
+    width: 40%;
+  }
+  .credits-details.flex-col {
+    width: 250px;
+  }
+  .credits-details.flex-col:last-child {
+    text-align: right;
+  }
+  .special-thanks.flex-col {
+    font-size: 12px;
+  }
+  .special-thanks h4.subheading {
+    width: auto;
+    margin-bottom: 12px;
+  }
+}
 @media screen and (max-width: 900px) {
   .displayable {
     display: none;
@@ -265,9 +300,6 @@ section.contact.flex-col {
   }
   .no-small-displays {
     display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
   }
   h1 {
     padding: 40px;
