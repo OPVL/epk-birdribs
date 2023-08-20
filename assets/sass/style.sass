@@ -204,3 +204,26 @@ section.contact.flex-col
     text-align: center
     width: auto
     margin-bottom: 12px
+
+.no-small-displays
+    display: none
+
+@media screen and (max-width: 900px)
+    .displayable
+        display: none
+
+    body
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100vh
+
+    .no-small-displays
+        display: flex
+        height: 100%
+        justify-content: center
+        flex-direction: column
+
+    h1
+        padding: 40px
+        text-align: center

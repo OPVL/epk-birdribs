@@ -167,7 +167,10 @@ $videos = [
 </head>
 
 <body>
-  <header class="flex-col">
+  <div class="no-small-displays">
+    <h1>this is best viewed on a larger screen</h1>
+  </div>
+  <header class="flex-col displayable">
     <div class="logo">
       <h1 class="placeholder">birdribs</h1>
     </div>
@@ -194,7 +197,7 @@ $videos = [
         <i class="fa-solid fa-cloud-arrow-down"></i> high res originals</a>
     </div>
   </header>
-  <main>
+  <main class="displayable">
     <div class="flex-row about-section">
       <section class="bio flex-col">
         <h2 class="placeholder">bio</h2>
@@ -214,7 +217,7 @@ $videos = [
       <section class="music flex-col">
         <h2 class="title">music</h2>
         <div class="embed flex-col">
-          <iframe title="bandcamp embed" style="border: 0; width: 500px; height: 672px"
+          <iframe style="border: 0; width: 360px; height: 532px;"
             src="https://bandcamp.com/EmbeddedPlayer/album=1243833148/size=large/bgcol=333333/linkcol=ffffff/transparent=true/"
             seamless><a href="https://birdribs.bandcamp.com/album/sleep-clinic-redundant-ave">Sleep Clinic // Redundant
               Ave by BIRDRIBS</a></iframe>
@@ -255,12 +258,12 @@ $videos = [
           <h4 class="subheading">special thanks</h4>
           <div class="flex-row">
             <div class="credits-details flex-col">
-              <span class="role">production</span>
+              <!-- <span class="role">production</span>
+              <span class="role">mastering</span> -->
               <span class="role">photography</span>
-              <span class="role">mastering</span>
             </div>
             <div class="credits-details flex-col">
-              <span class="person">future primate</span>
+              <!-- <span class="person">future primate</span> -->
               <span class="person">steven tatlow</span>
             </div>
           </div>
