@@ -1,0 +1,177 @@
+@import variables
+
+body
+    background: $color-black
+    color: $color-white
+    font-family: 'Roboto', sans-serif
+
+a
+    color: inherit
+    text-decoration: none
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+
+.flex-col
+    display: flex
+    flex-direction: column
+
+.flex-row
+    display: flex
+    flex-direction: row
+
+h1.placeholder
+    font-size: 64px
+    text-align: center
+    margin-top: 12px
+    text-transform: uppercase
+
+.subheading
+    font-size: 12px
+    text-align: right
+    margin: 4px
+    width: 25%
+
+header.flex-col
+    align-items: center
+
+#featured-images
+    width: 80%
+    margin-top: 40px
+    height: 500px
+
+.images
+    justify-content: space-between
+    height: 420px
+    .featured-image
+        &:hover
+            p
+                opacity: 0.6
+        p
+            margin-top: -50px
+            font-size: 12px
+            padding: 8px 12px
+            text-align: right
+            opacity: 0
+            background: $color-black
+            transition: opacity 0.3s ease-in-out
+            a
+                transition: color 0.3s ease-in-out
+            &:hover
+                a
+                    color: $color-danger
+        img
+            height: 100%
+
+.download-button
+    border: 4px solid $color-white
+    align-self: flex-end
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    color: $color-white
+    text-decoration: none
+    padding: 8px 12px
+    text-transform: uppercase
+    transition-property: background, color
+    transition-duration: 0.2s
+    &:hover
+        background: $color-white
+        color: $color-black
+    i
+        margin-right: 12px
+main
+    margin-top: 20px
+
+.about-section
+    justify-content: center
+    &:first-child
+        section
+            width: 35%
+
+    section
+        margin: 0 40px
+        h2
+            text-transform: uppercase
+            font-size: 2rem
+            margin-bottom: 16px
+            letter-spacing: 7px
+        p
+            font-size: 18px
+            letter-spacing: 1px
+            line-height: 1.6
+            margin-bottom: 12px
+        .embed
+            margin: 0 auto
+            justify-content: center
+            iframe
+                width: 100%
+                height: 100%
+
+        &.videos
+            margin-top: 40px
+            width: 70%
+.scroller
+    overflow-x: scroll
+    // width: 100%
+    margin: 20px
+    .scrollable
+        margin: 0 16px
+        margin-bottom: 20px
+        &:first-child
+            margin-left: 0
+        &:last-child
+            margin-right: 0
+        h4, a, p
+            color: white
+            text-decoration: none
+            text-transform: uppercase
+
+/* width */
+::-webkit-scrollbar
+    width: 10px
+
+/* Track */
+::-webkit-scrollbar-track
+    background: $color-black
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: $color-gray
+    transition: ease-in-out
+    &:hover
+        background: $color-danger
+        cursor: pointer
+
+footer
+    background: $color-black
+    color: $color-white
+    .copyright
+        padding: 1rem
+        text-align: center
+        font-size: 12px
+        letter-spacing: 2px
+        text-transform: uppercase
+        a
+            transition: color 0.2s ease-in-out
+            color: $color-white
+            &:hover
+                color: $color-danger
+.contact
+    justify-content: center
+    align-items: center
+    margin-bottom: 20px!important
+    .title
+        margin-bottom: 20px
+
+    &-details
+        a
+            color: white
+            text-align: center
+            text-transform: uppercase
+            transition: color,background 0.2s ease-in-out
+            &:hover
+                color: $color-danger
