@@ -70,7 +70,7 @@ header.flex-col {
   transition: color 0.3s ease-in-out;
 }
 .images .featured-image p:hover a {
-  color: #ff006a;
+  color: #E1316C;
 }
 .images .featured-image img {
   height: 100%;
@@ -169,11 +169,11 @@ main {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #605D58;
   transition: ease-in-out;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff006a;
+  background: #E1316C;
   cursor: pointer;
 }
 
@@ -194,7 +194,7 @@ footer .copyright a {
   color: #eee;
 }
 footer .copyright a:hover {
-  color: #ff006a;
+  color: #E1316C;
 }
 
 .contact {
@@ -212,7 +212,7 @@ footer .copyright a:hover {
   transition: color, background 0.2s ease-in-out;
 }
 .contact-details a:hover {
-  color: #ff006a;
+  color: #E1316C;
 }
 
 .credits-details.flex-col {
@@ -260,7 +260,7 @@ section.contact.flex-col {
   display: flex;
   align-items: center;
   margin: 0 30px;
-  background: #990040;
+  background: #961641;
   width: 300px;
   justify-content: c;
   padding: 8px 16px;
@@ -305,6 +305,80 @@ section.contact.flex-col {
     padding: 40px;
     text-align: center;
   }
+}
+.links {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  width: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(17, 17, 17, 0.5);
+  color: #eee;
+  align-self: center;
+  margin: 80px 0px 0px 0px;
+}
+@media screen and (max-width: 768px) {
+  .links {
+    font-size: 24px;
+    width: 280px;
+    bottom: 40px;
+  }
+}
+.links a {
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-grow: 0.5;
+  flex-shrink: 1;
+}
+.links a:hover {
+  flex-grow: 2;
+  flex-shrink: 0.8;
+}
+.links a:hover.bandcamp {
+  background: #629aa9;
+  color: #eee;
+  color: white;
+}
+.links a:hover.soundcloud {
+  background: rgba(255, 119, 0, 0.6);
+  color: #eee;
+  color: white;
+}
+.links a:hover.spotify {
+  background: rgba(29, 185, 84, 0.6);
+  color: #eee;
+  color: white;
+}
+.links a:hover.threads {
+  background: rgba(17, 17, 17, 0.6);
+  color: #eee;
+  color: #d0d0d0;
+}
+.links a:hover.instagram {
+  background: rgba(64, 93, 230, 0.6);
+  background: -moz-radial-gradient(top left, rgba(64, 93, 230, 0.6), rgba(225, 49, 108, 0.6));
+  background: linear-gradient(to bottom right, rgba(64, 93, 230, 0.6), rgba(225, 49, 108, 0.6));
+  color: #eee;
+  color: white;
+}
+.links a:hover.email {
+  background: rgba(155, 65, 98, 0.6);
+  color: #eee;
+  color: white;
+}
+.links a:hover.email:first-child {
+  padding-left: 5px;
+}
+.links a:hover.email:last-child {
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

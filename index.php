@@ -299,6 +299,39 @@ shuffle($artists);
         </div>
       </section>
     </div>
+    <div class="flex-col about-section">
+      <div class="links">
+        <a class="bandcamp" href="https://birdribs.bandcamp.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="bandcamp">
+          <i class="fa-brands fa-bandcamp"></i>
+        </a>
+
+        <a class="spotify" href="https://open.spotify.com/artist/2n1IIctLetLRqR28XNSVfz" target="_blank"
+          rel="noopener noreferrer" aria-label="spotify">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+
+        <a class="instagram" href="https://www.instagram.com/birdribsband/" target="_blank" rel="noopener noreferrer"
+          aria-label="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a class="soundcloud" href="https://soundcloud.com/birdribs" target="_blank" rel="noopener noreferrer"
+          aria-label="soundcloud">
+          <i class="fa-brands fa-soundcloud"></i>
+        </a>
+
+        <a class="threads" href="https://www.threads.net/@birdribsband" target="_blank" rel="noopener noreferrer"
+          aria-label="threads">
+          <i class="fa-brands fa-threads"></i>
+        </a>
+
+        <a class="email" href="mailto:birdribsband@gmail.com" target="_blank" rel="noopener noreferrer"
+          aria-label="email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="copyright">
