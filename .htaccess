@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Restricted Files"
-AuthUserFile ${HOME}/.htpasswd
+AuthUserFile ${HOME}/.htpasswds/epk.birdribs.uk
 Require valid-user
