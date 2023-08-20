@@ -2,5 +2,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/lloydcul/epk.birdribs.uk/
     - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
+    # - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH/assets
