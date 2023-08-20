@@ -155,12 +155,14 @@ shuffle($artists);
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EPK | BIRDRIBS</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- SEO BULLSHIT -->
   <meta name="description" content="BIRDRIBS electronic press kit" />
   <meta property="og:title" content="EPK | BIRDRIBS" />
   <meta property="og:description" content="BIRDRIBS electronic press kit" />
-  <meta property="og:image" content="https://birdribs.uk/assets/img/BIRDRIBS_FILM-02.webp" />
-  <meta property="og:url" content="https://birdribs.uk" />
+  <meta property="og:image" content="https://epk.birdribs.uk/assets/img/BIRDRIBS_FILM-26.webp" />
+  <meta property="og:url" content="https://epk,birdribs.uk" />
   <meta property="og:type" content="website" />
+  <!-- END SEO BULLSHIT -->
   <meta name=”robots” content="index, follow">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
