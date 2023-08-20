@@ -237,13 +237,10 @@ section.contact.flex-col {
 }
 
 .special-thanks.flex-col {
-  /* justify-content: center; */
-  align-items: center;
+  justify-content: center;
   margin-top: 20px;
-  /* justify-content: space-evenly; */
   font-size: 12px;
   color: gray;
-  /* width: 100%; */
 }
 
 .special-thanks h4.subheading {
