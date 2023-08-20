@@ -5,6 +5,7 @@ deployment:
     - /bin/cp index.php $DEPLOYPATH
     # - /bin/cp .htaccess $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/assets
+    - /bin/mkdir $DEPLOYPATH/assets
     - /bin/cp -R assets/css $DEPLOYPATH/assets/css
     - /bin/cp -R assets/img $DEPLOYPATH/assets/img
     - /bin/cp -R assets/favicon $DEPLOYPATH/assets/favicon
