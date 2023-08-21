@@ -8,6 +8,7 @@ simple press kit website for the band [birdribs](https://birdribs.uk)
   - [contents](#contents)
   - [requirements](#requirements)
   - [installation](#installation)
+  - [features](#features)
   - [development](#development)
     - [sass](#sass)
     - [php](#php)
@@ -29,6 +30,15 @@ npm run build
 
 php -S localhost:8000
 ```
+
+## features
+
+- [x] responsive (ish)
+- [x] shuffles credits to avoid arguments about who should be first
+- [x] shuffles photos on page load
+- [x] lazy loads photos
+- [ ] mobile support
+- [ ] firefox support
 
 ## development
 
