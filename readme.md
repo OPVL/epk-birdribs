@@ -1,5 +1,7 @@
 # BIRDIBS EPK
 
+![image](https://github.com/OPVL/epk-birdribs/assets/17033678/f944f9dd-a49b-4955-94cf-97f08da5f03b)
+
 simple press kit website for the band [birdribs](https://birdribs.uk)
 
 ## contents
