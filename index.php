@@ -183,7 +183,7 @@ shuffle($artists);
   </div>
   <header class="flex-col displayable">
     <div class="logo">
-      <h1 class="placeholder">birdribs</h1>
+      <h1 class="placeholder"><a href="https://birdibs.uk" target="_blank" rel="noreferrer noopener">birdribs</a></h1>
     </div>
     <div class="subheading">
       <h2 class="placeholder">electronic press kit</h2>
