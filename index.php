@@ -190,7 +190,7 @@ shuffle($artists);
     </div>
     <div id="featured-images" class="flex-col">
       <div class="images flex-row scroller">
-        <?php foreach ($creditedImages as $key => $image): ?>
+        <?php foreach ($creditedImages as $key => $image) : ?>
           <div class="featured-image scrollable">
             <img src="/assets/img/<?php echo ($image['file']) ?>" alt="<?php echo ($image['title']) ?>" <?php echo ($key > 5 ? 'loading="lazy"' : '') ?> />
             <p>
@@ -202,9 +202,7 @@ shuffle($artists);
           </div>
         <?php endforeach; ?>
       </div>
-      <a class=" download-button"
-        href="https://drive.google.com/drive/folders/1j-LRzL3qPm0efdfrsvx2DiMQtaVG1SLK?usp=sharing"
-        aria-label="high resolution images (opens in new tab)" target="_blank" rel="noopener noreferrer">
+      <a class=" download-button" href="https://drive.google.com/drive/folders/1j-LRzL3qPm0efdfrsvx2DiMQtaVG1SLK?usp=sharing" aria-label="high resolution images (opens in new tab)" target="_blank" rel="noopener noreferrer">
         <i class="fa-solid fa-cloud-arrow-down"></i> high res originals</a>
     </div>
   </header>
@@ -214,27 +212,24 @@ shuffle($artists);
         <section class="bio flex-col">
           <h2 class="placeholder">bio</h2>
           <p class="placeholder">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem iste sed in libero asperiores iure deserunt beatae
-            quis corrupti sunt! Corrupti laborum, delectus optio enim ex minima
-            doloribus quas. Tempore!
+            Cheltenham-based post-grunge outfit BIRDRIBS came to life in late 2022
+            when long time friends Sean Walker (Guitar/Vocals) and Lloyd Culpepper
+            (Bass/Vocals) met George Carey (Drums/Vocals) at the Frog & Fiddle in Cheltenham.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            velit, cum amet facilis deleniti tempore doloremque eaque illum
-            distinctio laboriosam, ea recusandae, ab error. Doloremque provident
-            quasi deserunt ipsum maiores.
+            Combining a blend 90's influenced guitars with grungey bass lines and balls to the wall infectious drum grooves,
+            BIRDRIBS have established a sound that they convey with ease.
+          </p>
+          <p>
+            Having released two singles "Sleep Clinic // Redundant Ave" in the summer of 2023,
+            the band have gone away to record for their debut album expected in early 2024.
           </p>
         </section>
         <section class="videos flex-col">
           <h2 class="title">videos</h2>
           <div class="flex-row scroller">
             <div class="scrollable flex-col">
-              <iframe width="560" height="315"
-                src="https://www.youtube-nocookie.com/embed/qji-m2F3kv0?si=_n8hsg053alvNgJc&amp;start=10"
-                title="birdribs @ vinestock 2023" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qji-m2F3kv0?si=_n8hsg053alvNgJc&amp;start=10" title="birdribs @ vinestock 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <p>live @ vinestock 2023</p>
             </div>
           </div>
@@ -243,9 +238,7 @@ shuffle($artists);
       <section class="music flex-col">
         <h2 class="title">music</h2>
         <div class="embed flex-col">
-          <iframe style="border: 0; width: 360px; height: 532px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1243833148/size=large/bgcol=333333/linkcol=ffffff/transparent=true/"
-            seamless><a href="https://birdribs.bandcamp.com/album/sleep-clinic-redundant-ave">Sleep Clinic // Redundant
+          <iframe style="border: 0; width: 360px; height: 532px;" src="https://bandcamp.com/EmbeddedPlayer/album=1243833148/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://birdribs.bandcamp.com/album/sleep-clinic-redundant-ave">Sleep Clinic // Redundant
               Ave by BIRDRIBS</a></iframe>
         </div>
       </section>
@@ -255,14 +248,14 @@ shuffle($artists);
         <h2 class="title">credits</h2>
         <div class="flex-row">
           <div class="credits-details flex-col">
-            <?php foreach ($artists as $artist): ?>
+            <?php foreach ($artists as $artist) : ?>
               <span class="role">
                 <?php echo ($artist['role']) ?>
               </span>
             <?php endforeach; ?>
           </div>
           <div class="credits-details flex-col">
-            <?php foreach ($artists as $artist): ?>
+            <?php foreach ($artists as $artist) : ?>
               <span class="person">
                 <?php echo ($artist['name']) ?>
               </span>
@@ -289,8 +282,7 @@ shuffle($artists);
         <div class="flex-row">
           <div class="contact-details flex-col">
             <p>
-              <a class="download-button" href="mailto:bookings@birdribs.uk" aria-label="email bookings" target="_blank"
-                rel="noopener noreferrer">
+              <a class="download-button" href="mailto:bookings@birdribs.uk" aria-label="email bookings" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-envelope"></i>
                 bookings@birdribs.uk
               </a>
@@ -301,33 +293,27 @@ shuffle($artists);
     </div>
     <div class="flex-col about-section">
       <div class="links">
-        <a class="bandcamp" href="https://birdribs.bandcamp.com/" target="_blank" rel="noopener noreferrer"
-          aria-label="bandcamp">
+        <a class="bandcamp" href="https://birdribs.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="bandcamp">
           <i class="fa-brands fa-bandcamp"></i>
         </a>
 
-        <a class="spotify" href="https://open.spotify.com/artist/2n1IIctLetLRqR28XNSVfz" target="_blank"
-          rel="noopener noreferrer" aria-label="spotify">
+        <a class="spotify" href="https://open.spotify.com/artist/2n1IIctLetLRqR28XNSVfz" target="_blank" rel="noopener noreferrer" aria-label="spotify">
           <i class="fa-brands fa-spotify"></i>
         </a>
 
-        <a class="instagram" href="https://www.instagram.com/birdribsband/" target="_blank" rel="noopener noreferrer"
-          aria-label="instagram">
+        <a class="instagram" href="https://www.instagram.com/birdribsband/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
 
-        <a class="soundcloud" href="https://soundcloud.com/birdribs" target="_blank" rel="noopener noreferrer"
-          aria-label="soundcloud">
+        <a class="soundcloud" href="https://soundcloud.com/birdribs" target="_blank" rel="noopener noreferrer" aria-label="soundcloud">
           <i class="fa-brands fa-soundcloud"></i>
         </a>
 
-        <a class="threads" href="https://www.threads.net/@birdribsband" target="_blank" rel="noopener noreferrer"
-          aria-label="threads">
+        <a class="threads" href="https://www.threads.net/@birdribsband" target="_blank" rel="noopener noreferrer" aria-label="threads">
           <i class="fa-brands fa-threads"></i>
         </a>
 
-        <a class="email" href="mailto:birdribsband@gmail.com" target="_blank" rel="noopener noreferrer"
-          aria-label="email">
+        <a class="email" href="mailto:birdribsband@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="email">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
