@@ -1,0 +1,27 @@
+{
+  "name": "epk-birdribs",
+  "version": "0.1.0",
+  "description": "electronic press kit for birdribs",
+  "main": "index.php",
+  "scripts": {
+    "watch": "sass --watch assets/sass/style.sass public/css/style.css",
+    "build": "sass assets/sass/style.sass public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OPVL/epk-birdribs.git"
+  },
+  "keywords": [
+    "epk",
+    "sass"
+  ],
+  "author": "opvl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OPVL/epk-birdribs/issues"
+  },
+  "homepage": "https://github.com/OPVL/epk-birdribs#readme",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

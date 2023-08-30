@@ -154,24 +154,24 @@ shuffle($artists);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EPK | BIRDRIBS</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="public/css/style.css" />
   <!-- SEO BULLSHIT -->
   <meta name="description" content="BIRDRIBS electronic press kit" />
   <meta property="og:title" content="EPK | BIRDRIBS" />
   <meta property="og:description" content="BIRDRIBS electronic press kit" />
-  <meta property="og:image" content="https://epk.birdribs.uk/assets/img/BIRDRIBS_FILM-26.webp" />
+  <meta property="og:image" content="https://epk.birdribs.uk/public/img/BIRDRIBS_FILM-26.webp" />
   <meta property="og:url" content="https://epk,birdribs.uk" />
   <meta property="og:type" content="website" />
   <!-- END SEO BULLSHIT -->
   <meta name=”robots” content="index, follow">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#111111">
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/public/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/public/favicon/safari-pinned-tab.svg" color="#111111">
+  <link rel="shortcut icon" href="/public/favicon/favicon.ico">
   <meta name="msapplication-TileColor" content="#111111">
-  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+  <meta name="msapplication-config" content="/public/favicon/browserconfig.xml">
   <meta name="theme-color" content="#111111">
 </head>
 
@@ -183,7 +183,7 @@ shuffle($artists);
   </div>
   <header class="flex-col displayable">
     <div class="logo">
-      <h1 class="placeholder">birdribs</h1>
+      <h1 class="placeholder"><a href="https://birdibs.uk" target="_blank" rel="noreferrer noopener">birdribs</a></h1>
     </div>
     <div class="subheading">
       <h2 class="placeholder">electronic press kit</h2>
@@ -192,7 +192,7 @@ shuffle($artists);
       <div class="images flex-row scroller">
         <?php foreach ($creditedImages as $key => $image) : ?>
           <div class="featured-image scrollable">
-            <img src="/assets/img/<?php echo ($image['file']) ?>" alt="<?php echo ($image['title']) ?>" <?php echo ($key > 5 ? 'loading="lazy"' : '') ?> />
+            <img src="/public/img/<?php echo ($image['file']) ?>" alt="<?php echo ($image['title']) ?>" <?php echo ($key > 5 ? 'loading="lazy"' : '') ?> />
             <p>
               <a href="<?php echo ($image['url']) ?>" target="_blank" rel="noreferrer noopener">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>

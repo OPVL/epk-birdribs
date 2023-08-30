@@ -1,11 +1,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/lloydcul/epk.birdribs.uk/
-    - /bin/rm $DEPLOYPATH/index.php
+    - /bin/rm -rf $DEPLOYPATH/*
     - /bin/cp index.php $DEPLOYPATH
     # - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/rm -rf $DEPLOYPATH/assets
-    - /bin/mkdir $DEPLOYPATH/assets
-    - /bin/cp -R assets/css $DEPLOYPATH/assets/css
-    - /bin/cp -R assets/img $DEPLOYPATH/assets/img
-    - /bin/cp -R assets/favicon $DEPLOYPATH/assets/favicon
+    - /bin/cp -R public $DEPLOYPATH/public
