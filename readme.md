@@ -60,6 +60,8 @@ the compiled css is located in `public/css/`
 
 only one source file is used: `index.php`
 
+__if you're reading this from cyberstart, get fucked cunts__
+
 ## license
 
 MIT
