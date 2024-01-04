@@ -482,19 +482,15 @@ shuffle($artists);
       <div class="flex-col">
         <section class="bio flex-col">
           <h2 class="placeholder">bio</h2>
-          <p class="placeholder">
-            Cheltenham-based post-grunge outfit BIRDRIBS came to life in late 2022
-            when long time friends Sean Walker (Guitar/Vocals) and Lloyd Culpepper
-            (Bass/Vocals) met George Carey (Drums/Vocals) at the Frog & Fiddle in Cheltenham.
-          </p>
-          <p>
-            Combining a blend 90's influenced guitars with grungey bass lines and balls to the wall infectious drum grooves,
-            BIRDRIBS have established a sound that they convey with ease.
-          </p>
-          <p>
-            Having released two singles "Sleep Clinic // Redundant Ave" in the summer of 2023,
-            the band have gone away to record for their debut album expected in early 2024.
-          </p>
+          <p>Cheltenham-based post-grunge outfit BIRDRIBS came to life in late 2022 when long time friends Sean Walker (Guitar/Vocals) and Lloyd Culpepper (Bass/Vocals) met George Carey (Drums/Vocals) at the Frog & Fiddle in Cheltenham.</p>
+
+          <p>Combining a blend of 90's influenced guitars with grungey bass lines and balls to the wall infectious drum grooves, BIRDRIBS have established a sound that they convey with ease.</p>
+
+          <p>They released two singles "Sleep Clinic // Redundant Ave" in the summer of 2023, the band then came back in November 2023 with the release of a live album called "Live At The Sweaty Jazz Cafe" which encapsulates who they were as a band at that point in time.</p>
+
+          <p>In November 2023 BIRDRIBS decided to enhance there sound by bringing in Tom Ponting on Guitar, The addition of Tommo really took the ribs to another level sonically bringing in another perspective to the band.</p>
+
+          <p>With 2024 on the horizon, the boys will be doing many dates across the uk with some more releases pending as a newly appointed four piece.</p>
         </section>
         <section class="videos flex-col">
           <h2 class="title">videos</h2>
