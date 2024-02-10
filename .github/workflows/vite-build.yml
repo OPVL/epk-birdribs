@@ -1,0 +1,42 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Vite Build & Release
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - name: package-version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@v1.3.1
+    - name: vite-build
+      uses: actions/setup-node@v4
+      with:
+        check-latest: true
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build
+    - name: archive-release
+      uses: thedoctor0/zip-release@0.7.6
+      with:
+        directory: 'dist'
+        type: 'zip'
+        filename: 'release-${{ steps.package-version.outputs.current-version }}.zip'
+        exclusions: '*.git* /*node_modules/* .editorconfig'
+    - name: upload-release
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        allowUpdates: true
+        artifacts: "dist/release-${{ steps.package-version.outputs.current-version }}.zip"
+        tag: ${{ steps.package-version.outputs.current-version }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+  
