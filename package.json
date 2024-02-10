@@ -1,15 +1,18 @@
 {
-  "name": "epk-birdribs",
+  "name": "uk.birdribs.epk",
   "version": "0.1.0",
   "description": "electronic press kit for birdribs",
   "main": "index.php",
+  "type": "module",
   "scripts": {
-    "watch": "sass --watch assets/sass/style.sass public/css/style.css",
-    "build": "sass assets/sass/style.sass public/css/style.css"
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/OPVL/epk-birdribs.git"
+    "url": "git+ssh://git@github.com/OPVL/uk.birdribs.epk.git"
   },
   "keywords": [
     "epk",
@@ -18,10 +21,12 @@
   "author": "opvl",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OPVL/epk-birdribs/issues"
+    "url": "https://github.com/OPVL/uk.birdribs.epk/issues"
   },
-  "homepage": "https://github.com/OPVL/epk-birdribs#readme",
-  "dependencies": {
-    "sass": "^1.66.1"
+  "homepage": "https://github.com/OPVL/uk.birdribs.epk#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "sass": "^1.70.0",
+    "vite": "^5.1.1"
   }
 }

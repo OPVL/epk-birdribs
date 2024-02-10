@@ -1,3 +1,5 @@
+# DO NOT USE THIS ANYMORE, see readme for release details
+
 deployment:
   tasks:
     - export DEPLOYPATH=/home/lloydcul/epk.birdribs.uk/
