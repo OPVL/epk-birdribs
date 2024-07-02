@@ -333,12 +333,6 @@ $creditedImages = [
     'url' => 'https://www.instagram.com/stevetatlow/'
   ],
   [
-    'file' => 'RIBS-13-min.jpg',
-    'title' => 'RIBS-13',
-    'overlay-text' => 'Steven Tatlow',
-    'url' => 'https://www.instagram.com/stevetatlow/'
-  ],
-  [
     'file' => 'RIBS-15-min.jpg',
     'title' => 'RIBS-15',
     'overlay-text' => 'Steven Tatlow',
@@ -414,7 +408,6 @@ $artists = [
   ['name' => 'sean walker', 'role' => 'vocals/guitar'],
   ['name' => 'lloyd culpepper', 'role' => 'bass'],
   ['name' => 'george carey', 'role' => 'drums'],
-  ['name' => 'tom ponting', 'role' => 'guitar']
 ];
 shuffle($artists);
 ?>
@@ -454,7 +447,7 @@ shuffle($artists);
   </div>
   <header class="flex-col displayable">
     <div class="logo">
-      <h1 class="placeholder"><a href="https://birdibs.uk" target="_blank" rel="noreferrer noopener">birdribs</a></h1>
+      <h1 class="placeholder"><a href="https://birdribs.uk" target="_blank" rel="noreferrer noopener">birdribs</a></h1>
     </div>
     <div class="subheading">
       <h2 class="placeholder">electronic press kit</h2>
@@ -488,13 +481,19 @@ shuffle($artists);
 
           <p>They released two singles "Sleep Clinic // Redundant Ave" in the summer of 2023, the band then came back in November 2023 with the release of a live album called "Live At The Sweaty Jazz Cafe" which encapsulates who they were as a band at that point in time.</p>
 
-          <p>In November 2023 BIRDRIBS decided to enhance there sound by bringing in Tom Ponting on Guitar, The addition of Tommo really took the ribs to another level sonically bringing in another perspective to the band.</p>
-
-          <p>With 2024 on the horizon, the boys will be doing many dates across the uk with some more releases pending as a newly appointed four piece.</p>
+          <p>With 2024 under way, the boys have done many dates across the uk with some more releases pending.</p>
         </section>
         <section class="videos flex-col">
           <h2 class="title">videos</h2>
           <div class="flex-row scroller">
+            <div class="scrollable flex-col">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-NdeZ2-WLfg?si=LJjeJ8hLBrRRAfBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p>bar fight - audiofarm</p>
+            </div>
+            <div class="scrollable flex-col">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S2_ynpPRTZk?si=XJhNn6tPNszv2Bim" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p>space - audiofarm</p>
+            </div>
             <div class="scrollable flex-col">
               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qji-m2F3kv0?si=_n8hsg053alvNgJc&amp;start=10" title="birdribs @ vinestock 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               <p>live @ vinestock 2023</p>
@@ -504,9 +503,16 @@ shuffle($artists);
       </div>
       <section class="music flex-col">
         <h2 class="title">music</h2>
-        <div class="embed flex-col">
-          <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2813569206/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://birdribs.bandcamp.com/album/at-the-sweaty-jazz-cafe">at the sweaty jazz cafe by BIRDRIBS</a></iframe>
-          <iframe style="border: 0; width: 350px; height: 522px;" src="https://bandcamp.com/EmbeddedPlayer/album=1243833148/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://birdribs.bandcamp.com/album/sleep-clinic-redundant-ave">Sleep Clinic // Redundant Ave by BIRDRIBS</a></iframe>
+        <div class="flex-row scroller">
+          <div class="scrollable flex-col">
+            <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2813569206/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://birdribs.bandcamp.com/album/at-the-sweaty-jazz-cafe">at the sweaty jazz cafe</a></iframe>
+          </div>
+          <div class="scrollable flex-col">
+            <iframe style="border: 0; width: 350px; height: 522px;" src="https://bandcamp.com/EmbeddedPlayer/album=1243833148/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://birdribs.bandcamp.com/album/sleep-clinic-redundant-ave">Sleep Clinic // Redundant Ave</a></iframe>
+          </div>
+          <div class="scrollable flex-col">
+            <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2719954330/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/" seamless><a href="https://birdribs.bandcamp.com/album/wasted">Wasted</a></iframe>
+          </div>
         </div>
       </section>
     </div>
@@ -588,7 +594,7 @@ shuffle($artists);
   </main>
   <footer>
     <div class="copyright">
-      <a href="https://lloydculpepper.uk" rel="noopener noreferrer">© 2023 opvl</a>
+      <a href="https://lloydculpepper.uk" rel="noopener noreferrer">© 2024 opvl</a>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/d83d45983d.js" crossorigin="anonymous"></script>
