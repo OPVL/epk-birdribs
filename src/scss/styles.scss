@@ -113,7 +113,7 @@ header {
 
     &:hover {
         background: $color-white;
-        color: $color-black;
+        color: $color-danger;
     }
 
     i {
@@ -262,19 +262,6 @@ footer {
 
     .title {
         margin-bottom: 20px;
-    }
-
-    &-details {
-        a {
-            color: white;
-            text-align: center;
-            text-transform: uppercase;
-            transition: color, background 0.2s ease-in-out;
-
-            &:hover {
-                color: $color-danger;
-            }
-        }
     }
 }
 
