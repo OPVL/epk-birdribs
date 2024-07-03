@@ -3,7 +3,6 @@ const artists = [
     { "name": "sean walker", "role": "vocals/guitar" },
     { "name": "lloyd culpepper", "role": "bass" },
     { "name": "george carey", "role": "drums" },
-    { "name": "tom ponting", "role": "guitar" }
 ];
 
 const shuffledArtists = (() => {
