@@ -20,7 +20,6 @@ simple press kit website for the band [birdribs](https://birdribs.uk)
 
 - nodejs
 - npm
-- php
 
 ## installation
 
@@ -28,9 +27,7 @@ simple press kit website for the band [birdribs](https://birdribs.uk)
 git clone git@github.com:OPVL/epk-birdribs.git
 cd epk-birdribs
 npm install
-npm run build
-
-php -S localhost:8000
+npm run start
 ```
 
 ## features
@@ -44,23 +41,50 @@ php -S localhost:8000
 
 ## development
 
-it's idiot proof
+### vite
 
-### sass
+this project uses [vite](https://vitejs.dev/) for development
 
-the sass files are located in `assets/sass/`
+```bash
+npm run start # start dev server
+npm run build # build for production
+```
+
+### scss
+
+the scss files are located in `src/scss/`
 
 ```bash
 npm run watch # watch for changes and rebuild
 ```
 
-the compiled css is located in `public/css/`
+the compiled css is located in `dist/assets/`
 
-### php
+### html
 
-only one source file is used: `index.php`
+main html file is `src/index.html`
 
-__if you're reading this from cyberstart, get fucked cunts__
+## deployment
+
+this project utilises github actions to deploy automatically generate a build and add the release files to the releases page
+
+### flow
+
+1. add changes to new branch
+2. increment package version `npm version [major | minor | patch]`
+3. push changes to github
+4. create a pull request
+5. merge pull request
+6. github actions will build and update the release page
+
+note: you may need to start the runner if it's not already running
+  
+  ```bash
+  # on self-hosted
+
+  cd /path/to/runner
+  ./run.sh
+  ```
 
 ## license
 
